@@ -2,10 +2,11 @@
 #katz_deli = []
 
 def line(katz_deli)
-if katz_deli == []
-  puts "The line is currently empty."
-else
-  katz_deli.collect!.with_index{|name, i| "#{i+1}, #{name}"}
+  if katz_deli == []
+    puts "The line is currently empty."
+  else
+    katz_deli.collect!.with_index{|name, i| "#{i+1}, #{name}"}
+  end
 end
 
 def take_a_number(katz_deli, name)
